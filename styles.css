@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #1F271B;
+    color: whitesmoke;
+    font-family: verdana;
+    font-size: 16px;
+}
+
+.header-text {
+    font-family: 'lilita one';
+    margin: 1em auto;
+    text-align: center;
+}
+
+.description {
+    font-style: italic;
+}
+
+form {
+    width: 80%;
+    max-width: 800px;
+    min-width: 250px;
+    margin: 30px auto 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #1F271B;
+    box-shadow: 0 0 20px 15px lightblue;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin: 0 0 5px;
+    border: none;
+    padding: 10px 0;
+    border-bottom: 2px solid grey;
+}
+
+
+fieldset:last-child {
+    padding: none;
+    border: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+input[type=checkbox] {
+    margin-left: 0.5em;
+}
+
+input[type="submit"] {
+    min-width: 250px;
+    margin: 0 auto;
+    height: 2em;
+    font-size: 1.3rem;
+    background-color: lightblue;
+    border: 2px solid whitesmoke;
+    color: #1F271B;
+    cursor: pointer;
+    border-radius: 7px;
+}

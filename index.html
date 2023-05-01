@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form | freeCodeCamp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title" class="header-text">Destiny's Survey Form</h1>
+    <p id="description" class="header-text description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form
+      action="https://register-demo.freecodecamp.org"
+      id="survey-form"
+      method="post"
+    >
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name:
+          <input
+            type="text"
+            required
+            id="name"
+            placeholder="Enter your name"
+            name="Name"
+        /></label>
+        <label for="email" id="email-label"
+          >Email:
+          <input
+            type="email"
+            required
+            id="email"
+            placeholder="Enter your Email"
+            name="Email"
+        /></label>
+        <label for="number" id="number-label"
+          >Age:
+          <input
+            type="number"
+            id="number"
+            min="10"
+            max="99"
+            placeholder="Age"
+            required
+            name="Age"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="select">What is your favourite type of pet?</label>
+        <select id="dropdown" id="select">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+          <option value="other">Other</option>
+          <option value="none">None</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <label>
+          <input class="inline" type="radio" name="gender" value="male" />
+          Male</label
+        >
+        <label>
+          <input type="radio" class="inline" name="gender" value="female" />
+          Female
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Hobbies</legend>
+        <label>
+          Community Involvement
+          <input
+            type="checkbox"
+            value="community-involvement"
+            class="inline"
+            name="community-development"
+          />
+        </label>
+        <label>
+          Writing
+          <input
+            class="inline"
+            type="checkbox"
+            value="writing"
+            name="writing"
+          />
+        </label>
+        <label>
+          Blogging
+          <input
+            type="checkbox"
+            class="inline"
+            value="blogging"
+            name="Blogging"
+          />
+        </label>
+        <label>
+          Learning languages
+          <input
+            type="checkbox"
+            class="inline"
+            value="learning-languages"
+            name="learninglngs"
+          />
+        </label>
+        <label>
+          Photography
+          <input
+            type="checkbox"
+            class="inline"
+            value="photography"
+            name="photography"
+          />
+        </label>
+        <label>
+          Travelling
+          <input
+            type="checkbox"
+            value="travelling"
+            class="inline"
+            name="travelling"
+          />
+        </label>
+        <label>
+          Sports
+          <input class="inline" type="checkbox" value="sports" name="sports" />
+        </label>
+        <label>
+          Reading
+          <input
+            type="checkbox"
+            class="inline"
+            value="reading"
+            name="reading"
+          />
+        </label>
+        <label>
+          Making music
+          <input type="checkbox" value="music" class="inline" name="music" />
+        </label>
+        <label>
+          Yoga
+          <input class="inline" type="checkbox" value="yoga" name="yoga" />
+        </label>
+        <label>
+          Arts
+          <input type="checkbox" class="inline" value="arts" name="arts" />
+        </label>
+        <label>
+          Dance
+          <input type="checkbox" value="dance" class="inline" name="dance" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comments"
+          >Additional Comments:
+          <textarea
+            id="comments"
+            rows="8"
+            cols="30"
+            placeholder="Input comments here"
+            name="comments"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
